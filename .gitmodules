@@ -1,0 +1,3 @@
+[submodule "external/guidellm"]
+	path = external/guidellm
+	url = https://github.com/vllm-project/guidellm.git

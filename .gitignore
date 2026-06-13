@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+# K-Perf 실행 산출물 (코드만 관리)
+kperf_result*.json
+kperf_report*.html
+benchmarks.json
+benchmarks.csv
+result*.json
+result*.csv

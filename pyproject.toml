@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kperf"
+version = "0.0.1"
+description = "K-Perf: GuideLLM wrapper for TTA reference benchmark tool."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "TTA / K-Perf" }]
+
+# Runtime deps are intentionally minimal in stage 1.
+# GuideLLM itself is installed editable from ./external/guidellm (submodule).
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["kperf*"]
+exclude = ["external*", "spike*", "analysis*", "docs*", "tests*"]
